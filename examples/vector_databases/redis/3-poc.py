@@ -16,11 +16,11 @@ import nbutils
 # nbutils.download_wikipedia_data()
 # data = nbutils.read_wikipedia_data()
 
-# pickle_file = 'data.pkl'
+pickle_file = 'data.pkl'
 # pickle_file = '/var/www/html/medscape/medscape-content-feed/linear_model/storage/shared/df_cache/EMBEDDINGS-10000/EMBEDDINGS-10000_20230329101648.pkl'
 # pickle_file = '/var/www/html/medscape/medscape-content-feed/linear_model/storage/shared/df_cache/EMBEDDINGS-10000-with-titles/EMBEDDINGS-10000-with-titles_20230331110930.pkl'
 # pickle_file = '/home/phu/htdocs/medscape/medscape-content-feed/linear_model/storage/shared/df_cache/EMBEDDINGS-ALL-2015-to-2016/EMBEDDINGS-ALL-2015-to-2016_20230330170354.pkl'
-pickle_file = '/var/www/html/medscape/medscape-content-feed/linear_model/storage/shared/df_cache/EMBEDDINGS-ALL-2015-to-2016-with-titles/EMBEDDINGS-ALL-2015-to-2016-with-titles_20230331121228.pkl'
+# pickle_file = '/var/www/html/medscape/medscape-content-feed/linear_model/storage/shared/df_cache/EMBEDDINGS-ALL-2015-to-2016-with-titles/EMBEDDINGS-ALL-2015-to-2016-with-titles_20230331121228.pkl'
 data = pd.read_pickle(pickle_file)
 data.columns = ['article_id', 'chunk', 'text', 'content_vector', 'title']
 data.head()
